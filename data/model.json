@@ -1,0 +1,310 @@
+{
+  "id": "midjourney",
+  "alias": "",
+  "official": "",
+  "source": "https://apimart.ai/en/pricing",
+  "extracted_at": "2026-09-18T03:42:50Z",
+  "prices": {
+    "default": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "blend": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "blend-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "blend-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "describe": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "describe-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "describe-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "edits": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "edits-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "edits-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "high_variation": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "high_variation-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "high_variation-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-niji6": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-niji6-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-niji6-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-niji7": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-niji7-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-niji7-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-v5.1": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-v5.1-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-v5.1-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-v5.2": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-v5.2-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-v5.2-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-v6.1": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-v6.1-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-v6.1-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-v7": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-v7-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-v7-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-v8.1": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-v8.1-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-v8.1-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "imagine-v8.2": {
+      "list": 0.0563,
+      "effective": 0.04504
+    },
+    "imagine-v8.2-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "imagine-v8.2-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "inpaint": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "inpaint-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "inpaint-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "low_variation": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "low_variation-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "low_variation-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "modal": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "modal-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "modal-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "pan": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "pan-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "pan-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "remix_strong": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "remix_strong-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "remix_strong-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "remix_subtle": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "remix_subtle-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "remix_subtle-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "reroll": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "reroll-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "reroll-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "shorten": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "shorten-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "shorten-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "upscale": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "upscale-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "upscale-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "variation": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "variation-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "variation-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    },
+    "video": {
+      "list": 0.25,
+      "effective": 0.2
+    },
+    "video-720p": {
+      "list": 0.5,
+      "effective": 0.4
+    },
+    "zoom": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "zoom-fast": {
+      "list": 0.0688,
+      "effective": 0.05504
+    },
+    "zoom-turbo": {
+      "list": 0.125,
+      "effective": 0.1
+    }
+  },
+  "official_prices": {}
+}

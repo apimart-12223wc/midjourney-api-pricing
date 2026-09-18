@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "02-product-cosmetics",
+    "category": "Product ad",
+    "prompt": "frosted glass serum bottle on wet pebbles, dramatic side light, shallow depth of field, commercial product photography --ar 1:1",
+    "model": "midjourney",
+    "calls": 1,
+    "observed_cost_usd": 0.04504
+  },
+  {
+    "slug": "01-watercolor-cat",
+    "category": "Illustration",
+    "prompt": "a curious tabby cat sitting in a sunbeam, soft watercolor illustration, loose brush strokes, warm palette --ar 16:9",
+    "model": "midjourney",
+    "calls": 1,
+    "observed_cost_usd": 0.04504
+  },
+  {
+    "slug": "03-cyberpunk-street",
+    "category": "Cinematic",
+    "prompt": "rainy neon alley in a cyberpunk city at night, reflections on wet asphalt, cinematic still, 35mm --ar 16:9",
+    "model": "midjourney",
+    "calls": 1,
+    "observed_cost_usd": 0.04504
+  },
+  {
+    "slug": "04-architectural-concept",
+    "category": "Architecture",
+    "prompt": "brutalist concrete pavilion beside a reflecting pool, overcast light, architectural photography, ultra sharp --ar 3:2",
+    "model": "midjourney",
+    "calls": 1,
+    "observed_cost_usd": 0.04504
+  }
+]
