@@ -1,8 +1,29 @@
 # Midjourney API Pricing — Per-Call Cost With Worked Examples
 
-What **Midjourney API pricing** actually looks like: a flat charge per call (Imagine, upscale, blend), how that differs from the subscription plans, and worked totals for 100 / 1,000 / 10,000 assets including the upscale step.
+<!-- conv-kit:v1 -->
 
-**Attributed entry points:** [Open Midjourney on APIMart](https://go.apimart.ai/k-e1468f) · [Current pricing](https://go.apimart.ai/k-36aff6) · [Get an API key](https://go.apimart.ai/k-ecfc07)
+<p align="center">
+  <img src="assets/badges/price.svg" alt="observed unit price"> <img src="assets/badges/billing.svg" alt="billing model"> <img src="assets/badges/compat.svg" alt="OpenAI-compatible endpoint">
+</p>
+
+<p align="center">
+  <img src="assets/02-product-cosmetics.jpg" width="820" alt="Midjourney (midjourney) output generated through APIMart">
+</p>
+
+> **$0.04504 per imagine call** — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-09-17)*
+
+**[Get an API key](https://go.apimart.ai/k-ecfc07)** · **[Live pricing](https://go.apimart.ai/k-36aff6)** · **[Model page](https://go.apimart.ai/k-e1468f)** · [⚡ 60-second quickstart](#quickstart)
+
+**Why teams call Midjourney (`midjourney`) through APIMart**
+
+- **One key, entire catalog.** The same `https://api.apimart.ai/v1` base URL and `Authorization` header reach Midjourney (`midjourney`) and 300+ other image, video and language models — switch the `model` field, not your client.
+- **$1 minimum, pay as you go.** No subscription and no prepaid plan to size up front: top up from $1 and spend it on calls. There is no free quota to burn through first, so the price in this table is the price you pay.
+- **The charge comes back in the response.** Every call reports the amount billed (`cost` / `credits_cost`), so a spend number is read per call instead of guessed at month end.
+- **Async by design.** Submit, take the `task_id`, poll `GET /v1/tasks/{id}` — batching and retries are ordinary queue work, not a bespoke integration.
+
+<!-- /conv-kit:v1 -->
+
+What **Midjourney API pricing** actually looks like: a flat charge per call (Imagine, upscale, blend), how that differs from the subscription plans, and worked totals for 100 / 1,000 / 10,000 assets including the upscale step.
 
 - Model id: `midjourney` (per-call billing)
 - Endpoints: `POST /v1/midjourney/generations`, `POST /v1/midjourney/generations/upscale`, poll `GET /v1/tasks/{task_id}`
@@ -88,6 +109,20 @@ What **Midjourney API pricing** actually looks like: a flat charge per call (Ima
 | zoom | $0.0688 | $0.055 |
 | zoom-fast | $0.0688 | $0.055 |
 | zoom-turbo | $0.125 | $0.1 |
+
+<!-- conv-kit:v1:scale -->
+### What that costs at scale
+
+| Spend | Cost |
+| --- | --- |
+| 100 calls | $4.50 |
+| 1000 calls | $45.04 |
+| 10000 calls | $450.40 |
+
+Linear at the observed per-unit rate, no volume discount assumed. Snapshot 2026-09-17; re-check the live table before committing a budget.
+<!-- /conv-kit:v1:scale -->
+
+
 <!-- pricing:model:end -->
 
 | Assets | Imagine only | With one upscale each |
@@ -148,6 +183,19 @@ Runnable versions (including the upscale follow-up) are in [`examples/`](example
 
 Prompts and the cost each job reported are also in [`data/samples.json`](data/samples.json).
 
+<!-- conv-kit:v1:fix -->
+## First-call troubleshooting
+
+| Symptom | Likely cause | Fix |
+| --- | --- | --- |
+| `401` / `invalid api key` | key missing, truncated, or a stray newline pasted into the header | Re-copy it from the console; the header is `Authorization: Bearer $APIMART_API_KEY` |
+| balance / credit error | the account has no balance | Top up from $1 in the console — there is no free quota to fall back on |
+| `429` | concurrent requests on one key | Back off, then retry the same request with the same `Idempotency-Key` |
+| `400` / model not found | wrong route for the id: the per-unit alias needs its `version`, the official id must not send one | Copy the exact `model` value from the route table above |
+| task ends `failed` | prompt rejected by the filter, or a reference image URL expired | Re-submit with a **new** `Idempotency-Key` and re-host the reference image |
+| result URL stops working | result links expire | Download the file as soon as the task reports `completed` |
+<!-- /conv-kit:v1:fix -->
+
 ## FAQ
 
 **How is Midjourney billed on APIMart?**
@@ -175,6 +223,12 @@ No — the subscription covers the Discord/web product. API access is a separate
 - `per call api pricing`
 - `cheap image api`
 - `ai image api`
+
+<!-- conv-kit:v1:cta -->
+---
+
+**Start with $1.** [Get an API key](https://go.apimart.ai/k-ecfc07) → [check live pricing](https://go.apimart.ai/k-36aff6) → [open Midjourney (`midjourney`) in the model library](https://go.apimart.ai/k-e1468f). The first call is three steps: submit, poll `task_id`, read the charged amount off the response.
+<!-- /conv-kit:v1:cta -->
 
 ## Attributed links (how this repository is measured)
 
