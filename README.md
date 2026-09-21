@@ -109,20 +109,6 @@ What **Midjourney API pricing** actually looks like: a flat charge per call (Ima
 | zoom | $0.0688 | $0.055 |
 | zoom-fast | $0.0688 | $0.055 |
 | zoom-turbo | $0.125 | $0.1 |
-
-<!-- conv-kit:v1:scale -->
-### What that costs at scale
-
-| Spend | Cost |
-| --- | --- |
-| 100 calls | $4.50 |
-| 1000 calls | $45.04 |
-| 10000 calls | $450.40 |
-
-Linear at the observed per-unit rate, no volume discount assumed. Snapshot 2026-09-17; re-check the live table before committing a budget.
-<!-- /conv-kit:v1:scale -->
-
-
 <!-- pricing:model:end -->
 
 | Assets | Imagine only | With one upscale each |
